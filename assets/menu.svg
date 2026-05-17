@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1125" role="img" aria-label="Erik's Eatery menu graphic">
+  <rect width="900" height="1125" fill="#f7f0e2"/>
+  <path d="M0 0h900v120H0zM0 1040h900v85H0zM0 0c75 170 75 340 0 510ZM900 250c-70 160-70 320 0 480Z" fill="#050505"/>
+  <circle cx="225" cy="160" r="122" fill="#050505"/>
+  <text x="225" y="155" text-anchor="middle" font-family="Georgia, serif" font-size="40" font-weight="800" fill="#f7f0e2">ERIK'S</text>
+  <text x="225" y="200" text-anchor="middle" font-family="Georgia, serif" font-size="36" font-weight="800" fill="#f7f0e2">EATERY</text>
+  <text x="610" y="195" text-anchor="middle" font-family="Georgia, serif" font-size="112" font-weight="800" fill="#050505">Menu</text>
+  <g font-family="Inter, Arial" fill="#111">
+    <text x="120" y="360" font-size="46" font-weight="900">Handhelds</text>
+    <text x="120" y="430" font-size="26">Philly Cheesesteak .......... $13.95</text>
+    <text x="120" y="485" font-size="26">Chicken Philly .............. $13.95</text>
+    <text x="120" y="540" font-size="26">Ellie's Wrap ................. $13.95</text>
+    <text x="120" y="595" font-size="26">Gyro ............................ $13.95</text>
+    <text x="120" y="650" font-size="26">Spinach Pie .................. $11.95</text>
+    <text x="520" y="360" font-size="46" font-weight="900">Smash</text>
+    <text x="520" y="430" font-size="26">The Dimos .............. $14.95</text>
+    <text x="520" y="485" font-size="26">Triple Fatty ............. $14.95</text>
+    <text x="520" y="540" font-size="26">Shroom 'n Doom ..... $14.95</text>
+    <text x="520" y="655" font-size="46" font-weight="900">Sides / Kids</text>
+    <text x="520" y="725" font-size="26">Greek Fries .............. $7.95</text>
+    <text x="520" y="780" font-size="26">Chicken Tenders ..... $7.95</text>
+  </g>
+</svg>

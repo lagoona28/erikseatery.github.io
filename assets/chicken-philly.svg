@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" role="img" aria-label="Chicken Philly sandwich">
+  <rect width="1000" height="760" fill="#f2e6d1"/>
+  <g transform="translate(500 415)">
+    <ellipse cy="170" rx="380" ry="58" fill="#000" opacity=".18"/>
+    <path d="M-360-70c95-145 610-145 720 0 40 54 12 112-75 112h-570c-87 0-115-58-75-112z" fill="#d89a44"/>
+    <path d="M-320 42h640c-12 140-620 145-640 0z" fill="#c27b38"/>
+    <path d="M-260-5c110-65 180-10 280-45 80-30 150 10 235 38" fill="none" stroke="#f5d46c" stroke-width="46" stroke-linecap="round"/>
+    <path d="M-250-38c80 16 185 36 260 14 93-26 170 6 250 28" fill="none" stroke="#805126" stroke-width="38" stroke-linecap="round"/>
+  </g>
+  <text x="62" y="112" font-family="Georgia, serif" font-size="74" font-weight="800" fill="#050505">Chicken Philly</text>
+</svg>

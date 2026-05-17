@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-label="Ellie's Wrap">
+  <rect width="900" height="1200" fill="#101010"/>
+  <rect y="620" width="900" height="580" fill="#2b1b12"/>
+  <g transform="translate(450 610) rotate(-4)">
+    <ellipse cx="0" cy="330" rx="330" ry="50" fill="#000" opacity=".45"/>
+    <rect x="-300" y="-80" width="600" height="380" rx="190" fill="#d7b37a"/>
+    <path d="M-250 20c170 72 330 73 500 0v200c-158 68-330 70-500 0z" fill="#f7f0e2" opacity=".58"/>
+    <circle cx="-140" cy="25" r="52" fill="#e34a2d"/><circle cx="-20" cy="-2" r="56" fill="#74a941"/><circle cx="110" cy="36" r="48" fill="#f7d46e"/>
+  </g>
+  <text x="80" y="125" font-family="Georgia, serif" font-size="76" font-weight="800" fill="#f0442f">Ellie's Wrap</text>
+  <text x="82" y="178" font-family="Inter, Arial" font-size="28" font-weight="800" fill="#58c8ff" letter-spacing="4">FAN FAVORITE</text>
+</svg>

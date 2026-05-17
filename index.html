@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Erik's Eatery is a Trinity and Starkey Ranch food truck serving fresh handhelds, smash burgers, Greek favorites, sides, salads, and event catering."
+    >
+    <title>Erik's Eatery | Trinity Food Truck & Events</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="Erik's Eatery home">
+        <span class="brand-mark">
+          <img data-site-image="logo" src="" alt="">
+          <span>EE</span>
+        </span>
+        <span>
+          <strong>Erik's Eatery</strong>
+          <small>Made Fresh Since 2025</small>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#menu">Menu</a>
+        <a href="#events">Events</a>
+        <a href="#story">Story</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="header-call" href="tel:+17272678191">Call (727) 267-8191</a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main id="home">
+      <section class="hero section-dark">
+        <div class="hero-media" aria-hidden="true">
+          <img data-site-image="hero" src="" alt="">
+          <div class="hero-overlay"></div>
+        </div>
+
+        <div class="hero-inner">
+          <p class="eyebrow">Trinity and Starkey Ranch Food Truck</p>
+          <h1>Fresh food, big flavor, ready for your next event.</h1>
+          <p class="hero-copy">
+            Mobile food truck specializing in Greek American cuisine, made fresh daily to satisfy your taste buds.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" data-google-form-link href="#" target="_blank" rel="noopener">Request the Truck</a>
+            <a class="btn btn-secondary" href="#menu">View Menu</a>
+          </div>
+
+          <dl class="quick-facts" aria-label="Quick facts">
+            <div>
+              <dt>Serving</dt>
+              <dd>Trinity, Starkey Ranch, and nearby Pasco events</dd>
+            </div>
+            <div>
+              <dt>Book</dt>
+              <dd><a href="tel:+17272678191">(727) 267-8191</a></dd>
+            </div>
+            <div>
+              <dt>Fresh</dt>
+              <dd>Greek American cuisine</dd>
+            </div>
+            <div>
+              <dt>Community</dt>
+              <dd>3.3K Facebook followers</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="intro band-light" aria-label="Food truck highlights">
+        <div class="section-shell intro-grid">
+          <div>
+            <p class="eyebrow dark">Why Book Erik's</p>
+            <h2>A polished food-truck experience with a loyal local following.</h2>
+          </div>
+          <p>
+            Erik's Eatery combines Greek American favorites, fresh daily cooking, and the flexible service of a mobile food truck. With thousands of local followers already watching the schedule, it is built for neighborhood nights, private events, and quick-service crowds.
+          </p>
+        </div>
+      </section>
+
+      <section class="featured section-shell" aria-label="Featured menu categories">
+        <article class="feature-tile">
+          <span>01</span>
+          <h3>Handhelds</h3>
+          <p>Cheesesteaks, gyros, wraps, sandwiches, spinach pie, and classic burgers served with fries.</p>
+        </article>
+        <article class="feature-tile">
+          <span>02</span>
+          <h3>Smash Burgers</h3>
+          <p>Double and triple smash burgers stacked with bacon, cheese, onions, mushrooms, and house flavor.</p>
+        </article>
+        <article class="feature-tile">
+          <span>03</span>
+          <h3>Events</h3>
+          <p>Neighborhood nights, school events, private parties, offices, markets, and local celebrations.</p>
+        </article>
+      </section>
+
+      <section class="gallery band-light" aria-label="Featured dishes">
+        <div class="section-shell">
+          <div class="section-heading gallery-heading">
+            <p class="eyebrow dark">Fan Favorites</p>
+            <h2>Built to look as good as it tastes.</h2>
+            <p>Use this section for the strongest Facebook photos: burgers, wraps, gyros, and event trays. Each image name is editable in <code>script.js</code>.</p>
+          </div>
+          <div class="gallery-grid" data-gallery-list></div>
+        </div>
+      </section>
+
+      <section id="menu" class="menu-section band-cream">
+        <div class="section-shell">
+          <div class="section-heading">
+            <p class="eyebrow dark">Menu</p>
+            <h2>Made fresh, served hot.</h2>
+            <p>Menu items can load from a public Google Sheet, with the built-in menu as a fallback. Use the Facebook menu graphic as a visual backup or replace it with new photography anytime.</p>
+          </div>
+
+          <div class="menu-layout">
+            <div class="menu-panel">
+              <div class="menu-status" data-menu-status>Loading menu...</div>
+              <div class="menu-list" data-menu-list></div>
+            </div>
+            <aside class="menu-art" aria-label="Menu image preview">
+              <img data-site-image="menu" src="" alt="Erik's Eatery menu graphic">
+              <div>
+                <h3>Want the truck at your event?</h3>
+                <p>Send an event request with the date, location, guest count, and best contact information.</p>
+                <a class="btn btn-dark" data-google-form-link href="#" target="_blank" rel="noopener">Open Event Form</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section id="events" class="events section-dark">
+        <div class="section-shell events-grid">
+          <div>
+            <p class="eyebrow">Events and Reservations</p>
+            <h2>Bring Erik's Eatery to the crowd.</h2>
+            <p>
+              From neighborhood food-truck nights to private celebrations, the booking process should be simple: choose a date, share the location, estimate the headcount, and Erik's team can follow up with availability.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" data-google-form-link href="#" target="_blank" rel="noopener">Request an Event</a>
+              <a class="btn btn-secondary" href="tel:+17272678191">Call Erik</a>
+            </div>
+          </div>
+          <div class="event-list">
+            <article class="event-photo-card">
+              <img data-site-image="truck" src="" alt="Erik's Eatery food truck ready for events">
+            </article>
+            <article>
+              <h3>Private Parties</h3>
+              <p>Birthdays, graduations, block parties, reunions, and backyard gatherings.</p>
+            </article>
+            <article>
+              <h3>Community Stops</h3>
+              <p>HOA nights, parks, schools, markets, churches, and local pop-ups.</p>
+            </article>
+            <article>
+              <h3>Workplace Lunches</h3>
+              <p>Office lunches, staff appreciation, job sites, and business events.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="story" class="story band-light">
+        <div class="section-shell story-grid">
+          <div class="story-image">
+            <img data-site-image="kitchen" src="" alt="Erik preparing food inside the truck">
+          </div>
+          <div>
+            <p class="eyebrow dark">The Story</p>
+            <h2>Local roots, fresh start.</h2>
+            <p>
+              Erik's Eatery launched in 2025 with a simple promise: make the kind of food people chase across town for, then bring it straight to the neighborhood. The menu blends Greek American favorites, loaded handhelds, smash burgers, crisp sides, and kid-friendly staples.
+            </p>
+            <p>
+              Follow the Facebook page for schedule updates, new menu drops, and event announcements.
+            </p>
+            <a class="text-link" data-facebook-link href="#" target="_blank" rel="noopener">Visit Facebook</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact section-shell">
+        <div class="contact-card">
+          <div>
+            <p class="eyebrow dark">Contact</p>
+            <h2>Ready to eat or book?</h2>
+            <p>Call Erik directly or use the event request form to share the details.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="btn btn-dark" href="tel:+17272678191">Call (727) 267-8191</a>
+            <a class="btn btn-light" data-google-form-link href="#" target="_blank" rel="noopener">Event Request Form</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Erik's Eatery</strong>
+        <span>Made Fresh Since 2025</span>
+      </div>
+      <a data-facebook-link href="#" target="_blank" rel="noopener">Facebook</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

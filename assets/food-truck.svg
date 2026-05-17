@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-label="Erik's Eatery food truck illustration">
+  <defs>
+    <linearGradient id="sky" y1="0" y2="1"><stop offset="0" stop-color="#eaf6ff"/><stop offset="1" stop-color="#f7f0e2"/></linearGradient>
+    <linearGradient id="wrap" x1="0" x2="1"><stop offset="0" stop-color="#f0442f"/><stop offset=".5" stop-color="#111"/><stop offset="1" stop-color="#1397d5"/></linearGradient>
+  </defs>
+  <rect width="1200" height="760" fill="url(#sky)"/>
+  <path d="M0 530h1200v230H0z" fill="#222"/>
+  <path d="M80 420h890l95 110v90H80z" fill="#e8e8e8"/>
+  <path d="M155 455h610v120H155z" fill="url(#wrap)"/>
+  <path d="M790 455h205l56 68H790z" fill="#cfd9e3"/>
+  <circle cx="270" cy="625" r="58" fill="#050505"/><circle cx="270" cy="625" r="28" fill="#777"/>
+  <circle cx="850" cy="625" r="58" fill="#050505"/><circle cx="850" cy="625" r="28" fill="#777"/>
+  <text x="460" y="525" text-anchor="middle" font-family="Georgia, serif" font-size="62" font-weight="800" fill="#f7f0e2">ERIK'S EATERY</text>
+  <text x="460" y="563" text-anchor="middle" font-family="Inter, Arial" font-size="24" font-weight="800" fill="#58c8ff" letter-spacing="8">MADE FRESH</text>
+  <text x="230" y="610" font-family="Inter, Arial" font-size="36" font-weight="900" fill="#f7f0e2">We Cater All Events</text>
+</svg>

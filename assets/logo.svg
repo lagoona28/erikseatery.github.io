@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Erik's Eatery logo</title>
+  <desc id="desc">A shield logo with red and blue flames, crossed knives, and Erik's Eatery text.</desc>
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="30%" r="65%">
+      <stop offset="0" stop-color="#272727"/>
+      <stop offset="1" stop-color="#050505"/>
+    </radialGradient>
+    <linearGradient id="fire" x1="0" x2="1">
+      <stop offset="0" stop-color="#f0442f"/>
+      <stop offset=".48" stop-color="#ff8a1f"/>
+      <stop offset=".52" stop-color="#20b8ff"/>
+      <stop offset="1" stop-color="#135dff"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="256" fill="#050505"/>
+  <circle cx="256" cy="256" r="224" fill="url(#glow)" stroke="#f7f0e2" stroke-width="10"/>
+  <path d="M125 175 145 93 198 163 227 76 256 157 286 76 315 163 368 93 388 175Z" fill="url(#fire)"/>
+  <path d="M118 178h276v72H118z" fill="#0b0b0b" stroke="#a3a3a3" stroke-width="8"/>
+  <path d="M164 294h184l-34 78H198z" fill="#0b0b0b" stroke="#a3a3a3" stroke-width="8"/>
+  <path d="M207 205 305 303M305 205 207 303" stroke="#f7f0e2" stroke-width="15" stroke-linecap="round"/>
+  <text x="256" y="232" text-anchor="middle" font-family="Georgia, serif" font-size="48" font-weight="800" fill="#f7f0e2">ERIK'S</text>
+  <text x="256" y="283" text-anchor="middle" font-family="Georgia, serif" font-size="42" font-weight="800" fill="#f7f0e2">EATERY</text>
+  <text x="256" y="334" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="800" letter-spacing="8" fill="#20b8ff">MADE FRESH</text>
+</svg>
