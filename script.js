@@ -4,42 +4,47 @@ const siteConfig = {
   googleFormUrl: "https://docs.google.com/forms/d/e/1FAIpQLSeTjjknR4pwFaaP4qXceDx55YqcyUMohlZa9kQxTqfZ3unfrw/viewform",
   menuSource: {
     // Publish a Google Sheet to the web as CSV, then paste the CSV URL here.
-    // Supported columns: Food, Description, Price. Optional: Category, Available.
+    // Supported columns: Category, Food, Description, Price. Optional: Available.
     googleSheetCsvUrl: "https://docs.google.com/spreadsheets/d/e/2PACX-1vT5ieKCMMZRBoLY8uU8LV5iS6WMaLStw4HMBelU01hoyzD07dZGdaSKL6Yec6H6Mulw__H6f4H4mjFS/pub?output=csv",
     useFallbackMenuWhenSheetFails: true
   },
   images: {
-    logo: "assets/logo.svg",
-    hero: "assets/hero-wrap.svg",
-    truck: "assets/food-truck.svg",
-    kitchen: "assets/kitchen.svg",
-    menu: "assets/menu.svg"
+    logo: "assets/eriks-logo.jpg",
+    hero: "assets/ellies-wrap-poster.jpg",
+    truck: "assets/food-truck.jpg",
+    kitchen: "assets/erik-in-kitchen.jpg",
+    menu: "assets/menu.jpg"
   },
   gallery: [
     {
       title: "Ellie's Wrap",
       description: "Fresh, colorful, and a clear fan favorite.",
-      image: "assets/ellies-wrap.svg"
+      image: "assets/ellies-wrap.jpg",
+      position: "center"
     },
     {
       title: "Smash Burgers",
       description: "Hot off the grill with melty cheese.",
-      image: "assets/smash-burger.svg"
+      image: "assets/smash-burger.jpg",
+      position: "center"
     },
     {
       title: "Gyros",
       description: "Greek American classics with tzatziki.",
-      image: "assets/gyro.svg"
+      image: "assets/gyro.jpg",
+      position: "center"
     },
     {
       title: "Event Trays",
       description: "Wraps, catering spreads, and party-ready service.",
-      image: "assets/event-wraps.svg"
+      image: "assets/event-wraps.jpg",
+      position: "center"
     },
     {
-      title: "Chicken Philly",
-      description: "Grilled, loaded, and made fresh.",
-      image: "assets/chicken-philly.svg"
+      title: "Philly Cheesesteak",
+      description: "Sliced beef, onions, melted cheese, and a toasted roll.",
+      image: "assets/philly-cheesesteak.jpg",
+      position: "center"
     }
   ],
   menu: [
@@ -177,7 +182,9 @@ document.querySelectorAll("[data-facebook-link]").forEach((link) => {
 
 document.querySelectorAll("[data-site-image]").forEach((image) => {
   const imageName = image.dataset.siteImage;
-  image.src = siteConfig.images[imageName] || "";
+  const source = siteConfig.images[imageName];
+
+  image.src = source || "";
   image.addEventListener("error", () => {
     image.classList.add("is-missing");
   });
@@ -264,6 +271,24 @@ function normalizeHeader(header) {
   return header.toLowerCase().replace(/[^a-z0-9]/g, "");
 }
 
+function inferCategory(name) {
+  const itemName = name.toLowerCase();
+
+  if (["chicken tenders", "hot dog", "mozzarella sticks"].some((term) => itemName.includes(term))) {
+    return "Kids";
+  }
+
+  if (itemName.includes("dimos") || itemName.includes("triple") || itemName.includes("shroom")) {
+    return "Smash Burgers";
+  }
+
+  if (itemName.includes("salad") || itemName.includes("fries")) {
+    return "Sides / Salad";
+  }
+
+  return "Handhelds";
+}
+
 function menuFromRows(rows) {
   const [headers, ...items] = rows;
   const headerMap = Object.fromEntries(headers.map((header, index) => [normalizeHeader(header), index]));
@@ -276,8 +301,8 @@ function menuFromRows(rows) {
   items.forEach((row) => {
     const available = get(row, "available").toLowerCase();
     const isHidden = ["no", "false", "0", "hidden", "soldout"].includes(available);
-    const category = get(row, "category") || "Menu";
     const name = get(row, "food", "name", "item");
+    const category = get(row, "category", "categorytitle", "section") || inferCategory(name);
 
     if (!name || isHidden) {
       return;
@@ -341,7 +366,12 @@ function renderGallery() {
     .map(
       (item) => `
         <article class="gallery-card">
-          <img src="${item.image}" alt="${item.title}" onerror="this.classList.add('is-missing')">
+          <img
+            src="${item.image}"
+            alt="${item.title}"
+            style="object-position: ${item.position || "center"}"
+            onerror="this.classList.add('is-missing');"
+          >
           <div>
             <h3>${item.title}</h3>
             <p>${item.description}</p>

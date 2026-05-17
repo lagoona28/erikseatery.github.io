@@ -15,30 +15,31 @@ Open `script.js` and edit the `siteConfig` object at the top.
 
 - Change `facebookUrl` if the Facebook page changes.
 - Change `googleFormUrl` if the event request form changes.
-- Change any image URL inside `images`, or replace the SVG files in `assets/`.
+- Change any image URL inside `images`, or replace the JPG/PNG files in `assets/`.
 - To edit the menu manually, change menu names, descriptions, and prices inside `menu`.
 - To edit the menu from Google Sheets, publish a sheet as CSV and paste the CSV link into `menuSource.googleSheetCsvUrl`.
 
 ## Google Sheets Menu
 
-The connected sheet can use this simple header row:
+The connected sheet should use this header row:
 
 ```csv
-Food,Description,Price
+Category,Food,Description,Price
 ```
 
 Example rows:
 
 ```csv
-Philly Cheesesteak,With onions and fries.,$13.95
-The Dimos,"Double smash burger with bacon, onion, cheese, and an egg. Served with fries.",$14.95
-Hot Dog,Served with fries.,$7.95
+Handhelds,Philly Cheesesteak,With onions and fries.,$13.95
+Smash Burgers,The Dimos,"Double smash burger with bacon, onion, cheese, and an egg. Served with fries.",$14.95
+Kids,Hot Dog,Served with fries.,$7.95
 ```
 
 Optional extra columns:
 
-- `Category` groups items into sections such as `Handhelds`, `Smash Burgers`, or `Kids`.
 - `Available` can hide items when set to `no`, `false`, `0`, `hidden`, or `soldout`.
+
+If `Category` is left blank, the site tries to infer a section from the food name.
 
 Choose `File > Share > Publish to web`, select the menu sheet, choose `Comma-separated values (.csv)`, and publish it. Paste that CSV URL into `script.js`:
 
@@ -53,14 +54,16 @@ menuSource: {
 
 The site currently expects these files:
 
-- `assets/logo.svg` for the small header logo.
-- `assets/hero-wrap.svg` for the big hero image.
-- `assets/food-truck.svg` for the event/truck image.
-- `assets/kitchen.svg` for the story section image.
-- `assets/menu.svg` for the menu graphic.
-- `assets/ellies-wrap.svg`, `assets/smash-burger.svg`, `assets/gyro.svg`, `assets/event-wraps.svg`, and `assets/chicken-philly.svg` for the food gallery.
+- `assets/eriks-logo.jpg` for the small header logo.
+- `assets/ellies-wrap-poster.jpg` for the big hero image.
+- `assets/food-truck.jpg` for the event/truck image.
+- `assets/erik-in-kitchen.jpg` for the story section image.
+- `assets/menu.jpg` for the menu graphic.
+- `assets/ellies-wrap.jpg`, `assets/smash-burger.jpg`, `assets/gyro.jpg`, `assets/event-wraps.jpg`, and `assets/philly-cheesesteak.jpg` for the food gallery.
 
 You can use different filenames by editing the `images` block in `script.js`.
+
+Add JPG or PNG files to `assets/` using the names listed in `assets/PHOTO-NAMES.md`.
 
 ## Publishing on GitHub Pages
 
