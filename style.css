@@ -314,14 +314,18 @@ h3 {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  margin: 2rem 0 0;
-  border: 1px solid var(--line-dark);
+  margin: 2.35rem 0 0;
+  border: 1px solid rgba(8, 7, 6, 0.24);
+  background: var(--panel);
+  box-shadow: 0 18px 44px rgba(8, 7, 6, 0.18);
 }
 
 .quick-facts div {
-  padding: 1rem;
-  border-right: 1px solid var(--line-dark);
-  background: rgba(255, 255, 255, 0.04);
+  padding: 1.1rem 1.25rem;
+  border-right: 1px solid rgba(8, 7, 6, 0.14);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.58), rgba(255, 255, 255, 0)),
+    var(--panel);
 }
 
 .quick-facts div:last-child {
@@ -329,7 +333,7 @@ h3 {
 }
 
 .quick-facts dt {
-  color: var(--orange);
+  color: var(--red);
   font-size: 0.68rem;
   font-weight: 800;
   letter-spacing: 0.16em;
@@ -338,7 +342,9 @@ h3 {
 
 .quick-facts dd {
   margin: 0.42rem 0 0;
-  color: rgba(255, 255, 255, 0.76);
+  color: var(--ink);
+  font-size: 1.12rem;
+  line-height: 1.35;
 }
 
 .intro,
@@ -708,7 +714,7 @@ h3 {
   }
 
   .quick-facts div:nth-child(-n + 2) {
-    border-bottom: 1px solid var(--line-dark);
+    border-bottom: 1px solid rgba(8, 7, 6, 0.14);
   }
 
   .gallery-grid {
@@ -800,11 +806,11 @@ h3 {
 
   .quick-facts div,
   .quick-facts div:nth-child(2) {
-    border-bottom: 1px solid var(--line-dark);
+    border-bottom: 1px solid rgba(8, 7, 6, 0.14);
   }
 
   .quick-facts div:nth-child(odd) {
-    border-right: 1px solid var(--line-dark);
+    border-right: 1px solid rgba(8, 7, 6, 0.14);
   }
 
   .quick-facts div:nth-child(even) {
