@@ -1,5 +1,8 @@
 const siteConfig = {
   phone: "(727) 267-8191",
+  email: "erikseatery@gmail.com",
+  address: "9426 Little Rd, New Port Richey, FL 34654",
+  mapsUrl: "https://www.google.com/maps/search/?api=1&query=9426%20Little%20Rd%2C%20New%20Port%20Richey%2C%20FL%2034654",
   facebookUrl: "https://www.facebook.com/p/Eriks-Eatery-61564585456567/",
   googleFormUrl: "https://docs.google.com/forms/d/e/1FAIpQLSeTjjknR4pwFaaP4qXceDx55YqcyUMohlZa9kQxTqfZ3unfrw/viewform",
   menuSource: {
@@ -178,6 +181,14 @@ document.querySelectorAll("[data-google-form-link]").forEach((link) => {
 
 document.querySelectorAll("[data-facebook-link]").forEach((link) => {
   link.href = siteConfig.facebookUrl;
+});
+
+document.querySelectorAll("[data-email-link]").forEach((link) => {
+  link.href = `mailto:${siteConfig.email}`;
+});
+
+document.querySelectorAll("[data-map-link]").forEach((link) => {
+  link.href = siteConfig.mapsUrl;
 });
 
 document.querySelectorAll("[data-site-image]").forEach((image) => {
